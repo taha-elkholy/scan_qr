@@ -4,13 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+A Flutter Task Using Figma design and Api integration
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<p float="left">
+ 
+  <img src="https://user-images.githubusercontent.com/95647394/223428241-6faa78cc-d182-42d0-bdd2-0a7039595c3b.png" width="200">
+  
+  <img src="https://user-images.githubusercontent.com/95647394/223428245-f0c493b4-1a05-48aa-b80e-dc0acb9cf485.png" width="200">
+  
+   <img src="https://user-images.githubusercontent.com/95647394/223428224-4caeba05-4dc9-42f5-90e0-98c035972af7.png" width="200">
+</p>
