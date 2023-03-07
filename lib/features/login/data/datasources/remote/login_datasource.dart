@@ -1,4 +1,3 @@
-
 import 'package:injectable/injectable.dart';
 import 'package:scan_qr/core/error/throw_app_exception.dart';
 import 'package:scan_qr/features/login/data/datasources/remote/login_api_service.dart';

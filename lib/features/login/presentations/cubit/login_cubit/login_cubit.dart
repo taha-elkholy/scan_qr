@@ -11,7 +11,6 @@ class LoginCubit extends Cubit<LoginStates> {
 
   final LoginUseCase _loginUseCase;
 
-
   Future<void> login({required LoginParam loginParam}) async {
     emit(const LoginStates.loading());
     final result = await _loginUseCase(loginParam);
@@ -24,6 +23,4 @@ class LoginCubit extends Cubit<LoginStates> {
       ),
     );
   }
-
-
 }

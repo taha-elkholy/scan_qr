@@ -6,5 +6,4 @@ class EndPoints {
   static const String login = '${baseUrl}login-scanner';
   static const String scan = '${baseUrl}scan';
   static const String myCodes = '${baseUrl}my-codes';
-
 }

@@ -1,4 +1,3 @@
-
 import 'package:scan_qr/features/login/data/models/user/user_model.dart';
 import 'package:scan_qr/features/login/domain/entities/user.dart';
 

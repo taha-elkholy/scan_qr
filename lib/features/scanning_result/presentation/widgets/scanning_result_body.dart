@@ -23,12 +23,12 @@ class ScanningResultBody extends StatelessWidget {
         SizedBox(
           height: 35.h,
         ),
-         const ScanningResultList(results: [
-           'kuhkuh',
-           'kuhkuh',
-           'kuhkuh',
-           'kuhkuh',
-         ]),
+        const ScanningResultList(results: [
+          'kuhkuh',
+          'kuhkuh',
+          'kuhkuh',
+          'kuhkuh',
+        ]),
         SizedBox(
           height: 20.h,
         ),

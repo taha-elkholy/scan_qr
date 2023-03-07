@@ -1,6 +1,7 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:scan_qr/core/utils/app_colors.dart';
-import 'dart:math' as math;
 
 class LoginBackground extends StatelessWidget {
   const LoginBackground({Key? key}) : super(key: key);

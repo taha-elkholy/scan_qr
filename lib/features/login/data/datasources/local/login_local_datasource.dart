@@ -1,4 +1,3 @@
-
 import 'package:injectable/injectable.dart';
 import 'package:scan_qr/core/utils/app_strings.dart';
 import 'package:shared_preferences/shared_preferences.dart';

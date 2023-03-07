@@ -28,7 +28,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   void initState() {
     super.initState();
-    _passwordVisible = widget.isPassword? true: false;
+    _passwordVisible = widget.isPassword ? true : false;
   }
 
   @override
@@ -38,7 +38,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       height: 58.h,
       child: TextFormField(
         controller: widget.controller,
-        obscureText: _passwordVisible ,
+        obscureText: _passwordVisible,
         maxLines: 1,
         keyboardType: widget.inputType,
         style: Theme.of(context).textTheme.bodyMedium,

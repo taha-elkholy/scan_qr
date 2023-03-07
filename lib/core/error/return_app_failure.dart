@@ -1,4 +1,3 @@
-
 import 'package:scan_qr/core/error/app_failure.dart';
 import 'package:scan_qr/core/error/exceptions.dart';
 import 'package:scan_qr/core/utils/app_strings.dart';
