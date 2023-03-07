@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:scan_qr/config/routes/app_routes.dart';
 import 'package:scan_qr/core/utils/app_strings.dart';
+import 'package:scan_qr/features/home/presentation/pages/home_page.dart';
+import 'package:scan_qr/features/scanning_result/presentation/pages/scanning_result_page.dart';
 import 'package:scan_qr/features/login/presentations/pages/login/login_page.dart';
 
 class AppRouter {
@@ -9,6 +11,16 @@ class AppRouter {
       case AppRoutes.initialPageRoute:
         return MaterialPageRoute(
           builder: (_) => const LoginPage(),
+          settings: settings,
+        );
+      case AppRoutes.homePageRout:
+        return MaterialPageRoute(
+          builder: (_) => const HomePage(),
+          settings: settings,
+        );
+      case AppRoutes.scanningResultsPageRout:
+        return MaterialPageRoute(
+          builder: (_) => const ScanningResultPage(),
           settings: settings,
         );
       default:

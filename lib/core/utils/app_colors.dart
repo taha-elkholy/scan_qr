@@ -9,4 +9,5 @@ class AppColors {
   static Color white = const Color(0xffffffff);
   static Color transparent = Colors.transparent;
   static Color black = const Color(0xff000000);
+  static Color cardColor = const Color(0xffF4F4F4);
 }

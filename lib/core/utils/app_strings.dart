@@ -13,6 +13,19 @@ class AppStrings {
   static const String passwordValidation = 'Not Valid password';
   static const String forgotPassword = 'Forgot Password?';
 
+  /// home page
+  static const String scanQRCode = 'Scan OR code';
+  static const String scanQRCodeDescription =
+      'Place qr code inside the frame to scan please avoid shake to get results quickly';
+  static const String scanningCode = 'Scanning Code...';
+  static const String placeCameraCode = 'Place Camera Code';
+
+  /// scanning result
+  static const String scanningResult = 'Scanning Result';
+  static const String scanningResultDescription =
+      'Proreader will Keep your last 10 days historyto keep your all scared history pleasepurched our pro package';
+  static const String send = 'Send';
+
   /// shared preferences
   static const String tokenKey = 'TOKEN_KEY';
 

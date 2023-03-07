@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scan_qr/features/login/presentations/pages/widgets/login_form.dart';
-import 'package:scan_qr/features/login/presentations/pages/widgets/login_header.dart';
+import 'package:scan_qr/features/login/presentations/widgets/login_form.dart';
+import 'package:scan_qr/features/login/presentations/widgets/login_header.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({Key? key}) : super(key: key);

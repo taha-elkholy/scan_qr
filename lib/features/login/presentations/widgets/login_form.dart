@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:scan_qr/config/routes/app_routes.dart';
 import 'package:scan_qr/core/presentation/widgets/custom_elevated_button.dart';
 import 'package:scan_qr/core/presentation/widgets/custom_text_form_field.dart';
 import 'package:scan_qr/core/utils/app_colors.dart';
 import 'package:scan_qr/core/utils/app_strings.dart';
+import 'package:scan_qr/features/login/presentations/cubit/login_cubit/login_cubit.dart';
+import 'package:scan_qr/features/login/presentations/cubit/login_cubit/login_states.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({Key? key}) : super(key: key);
@@ -87,10 +91,28 @@ class _LoginFormState extends State<LoginForm> {
             SizedBox(
               height: 24.h,
             ),
-            CustomElevatedButton(
-              label: AppStrings.loginTitle,
-              onPressed: () {},
-            )
+            BlocBuilder<LoginCubit, LoginStates>(builder: (context, state) {
+              return CustomElevatedButton(
+                label: AppStrings.loginTitle,
+                isLoading: state == const LoginStates.loading(),
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    AppRoutes.homePageRout,
+                  );
+
+                  // if (_formKey.currentState!.validate()) {
+                  //   FocusManager.instance.primaryFocus?.unfocus();
+                  //   BlocProvider.of<LoginCubit>(context).login(
+                  //     loginParam: LoginParam(
+                  //       email: _phoneController.text,
+                  //       password: _passwordController.text,
+                  //     ),
+                  //   );
+                  // }
+                },
+              );
+            })
           ],
         ),
       ),

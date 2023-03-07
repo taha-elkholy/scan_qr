@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:scan_qr/core/utils/app_strings.dart';
-import 'package:scan_qr/features/login/presentations/pages/widgets/login_background.dart';
+import 'package:scan_qr/features/login/presentations/widgets/login_background.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({Key? key}) : super(key: key);

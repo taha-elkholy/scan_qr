@@ -24,6 +24,7 @@ dependencies:
   retrofit: ^4.0.1
   json_annotation: ^4.7.0
   freezed_annotation: ^2.0.3
+  flutter_svg: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -39,6 +40,8 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  assets:
+    - assets/icons/
 
   fonts:
     - family: Inter

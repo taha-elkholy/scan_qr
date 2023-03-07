@@ -11,14 +11,14 @@ class AppTheme {
         scaffoldBackgroundColor: AppColors.white,
         fontFamily: 'Inter',
         appBarTheme: AppBarTheme(
-          elevation: 0,
-          color: AppColors.transparent,
-          systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: AppColors.transparent,
-            statusBarBrightness: Brightness.dark,
-            statusBarIconBrightness: Brightness.dark,
-          ),
-        ),
+            elevation: 0,
+            color: AppColors.transparent,
+            systemOverlayStyle: SystemUiOverlayStyle(
+              statusBarColor: AppColors.transparent,
+              statusBarBrightness: Brightness.dark,
+              statusBarIconBrightness: Brightness.dark,
+            ),
+            iconTheme: IconThemeData(color: AppColors.darkGrey)),
         inputDecorationTheme: InputDecorationTheme(
           hintStyle: TextStyle(
             color: AppColors.grey,
@@ -47,6 +47,13 @@ class AppTheme {
             color: AppColors.black,
             fontSize: 14.sp,
             fontWeight: FontWeight.w400,
+          ),
+        ),
+        cardTheme: CardTheme(
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          color: AppColors.cardColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(11.r),
           ),
         ),
       );
