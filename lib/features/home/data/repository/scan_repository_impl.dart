@@ -18,7 +18,8 @@ class ScanRepositoryImpl implements ScanRepository {
   @override
   Future<Either<AppFailure, ScanCode>> scan({required String code}) async {
     try {
-      final scanCodeModel = await _scanRemoteDatasource.scan(code: code.toModel);
+      final scanCodeModel =
+          await _scanRemoteDatasource.scan(code: code.toModel);
 
       return right(scanCodeModel.fromModel);
     } on AppException catch (appException) {
