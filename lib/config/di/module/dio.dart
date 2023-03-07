@@ -24,7 +24,9 @@ class AppInterceptor extends Interceptor {
 
   String? _getToken() {
     final token = getIt<SharedPreferences>().getString(AppStrings.tokenKey);
-
+    // Todo a static valid token as i can get dynamic one from the login endpoint yet
+    // must be removed when fix it
+    return 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzA3Y2I2NGViYWU4MWNmNGM2MGU1NzliMTFmYWI3MmM3ZGZkYjU1NjFlNWM1ZDk5MWE5Mzc3MjZmODQyYmJhMzk4M2I3NmIwOTlmMmNkNGYiLCJpYXQiOjE2NzEzNjk3NDAsIm5iZiI6MTY3MTM2OTc0MCwiZXhwIjoxNzAyOTA1NzQwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.UXuXEXFt6chujm7c-bUnwq_-Z_RRvKa3KaUstu4Lw_6PpRNGDwY3uoOIOXrAkQDFjHWyNL7bSomrFEEl69jL3LE_-NctJfDxWn9QwMQfhlEFixTz5PonjEQKq-sxv6x8D64JvFB_8WQwxE1GgH70W25TYl607zWypdIegKNNT2g8jepK8GRiajph9u0dXjwJrG8WjJXcZu1Fw3H4mILVyln16uYxeXBDTfWvY2xfj11OM64tqg2zonVjqJCtEDkorUfmhKXhaS1Br3owLUiVAZZ5dZLlPkqDZfj13DpHlXcMSGynl53opLx02F83bfDPijw9K8dJq7xyQsdOlWimj8Y4BmJn39fojvmIvmGY4VS6m_lFdHT99eGg7dIO-zIYbou-dzPgjOb9ZQyTD7yTrqi_GJQyRFD5PEUa8cV9SYIybykm8Pxm7qfsTcPAp8OwMELQjA11PYsb0tBKMu1L2hJ1obAqvvl3aE84qGYmLbAuGOxGAkEig_DPJzHPDzeDDE8GJTcOqGpY11iSWJDK1fCkDWGzXYZS0zKSdHbQLLg7nM3e4WporIdKXX8AMvsPj7rGt2jR1poWxl5HQdq1MCk9TZrKCXFALqorChhobNl8N1w4et3PBioLrofnCXugN5_nErfLYTiYBZKzL1wjIizll-HjiNoyKRCQXkOHeM8';
     return token;
   }
 
@@ -75,7 +77,7 @@ class AppInterceptor extends Interceptor {
 
   @override
   void onError(DioError err, ErrorInterceptorHandler handler) {
-    debugPrint('AppInterceptor=> Dio Error is:${err.message}');
+    debugPrint('AppInterceptor=> Dio Error Message is:${err.message}');
     if (err.error is SocketException) {
       debugPrint('AppInterceptor=>  socket Exception');
     }
